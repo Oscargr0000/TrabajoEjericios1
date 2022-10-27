@@ -13,11 +13,13 @@ public class ChangeOpacity : MonoBehaviour
     void Start()
     {
         SphereRenderer = GetComponent<Renderer>();
+        SphereRenderer.material.color = new Vector4(0f, 0f, 0f, 0f);
     }
 
     
     public void OnChange()
     {
-      //  SphereRenderer.material.
+        float sliderValue = sliderController.value;
+        SphereRenderer.material.color = new Vector4(0f, 0f, 0f, sliderValue);
     }
 }
