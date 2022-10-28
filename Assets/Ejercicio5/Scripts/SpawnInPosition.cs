@@ -9,6 +9,8 @@ public class SpawnInPosition : MonoBehaviour
 
     void Update()
     {
+
+        //When the S key is press, calls a "for" that instantiate the spheres the same number of time as the legth of th array.
         if (Input.GetKeyDown(KeyCode.S))
         {
             int forLimit = positions.Length;

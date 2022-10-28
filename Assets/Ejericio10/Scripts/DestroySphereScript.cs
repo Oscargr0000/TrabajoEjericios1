@@ -13,6 +13,8 @@ public class DestroySphereScript : MonoBehaviour
         GM = FindObjectOfType<GameManager>();
     }
 
+
+    // When the sphere is press desactivate the gameobject and add a point to the counter hosted in the Game Manager
     private void OnMouseDown()
     {
         if (gameObject.CompareTag("Sphere"))
@@ -21,7 +23,6 @@ public class DestroySphereScript : MonoBehaviour
             gameObject.SetActive(false);
 
             contadorText.text = GM.contadorSphere.ToString();
-            Debug.Log(GM.contadorSphere);
         }
     }
 }

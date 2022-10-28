@@ -8,6 +8,8 @@ public class SwitchScript : MonoBehaviour
     public Light bombilla;
     public Toggle switchLight;
 
+
+    //When the toogle is change, make the intensity variate between 5 or 0
     public void OnChange()
     {
         if (switchLight.isOn == true)

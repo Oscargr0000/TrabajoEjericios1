@@ -19,6 +19,8 @@ public class ChangeOpacity : MonoBehaviour
     
     public void OnChange()
     {
+
+        //When the value of the slider is change, gets the new value and set it in a vector4 (RBGA)
         float sliderValue = sliderController.value;
         SphereRenderer.material.color = new Vector4(0f, 0f, 0f, sliderValue);
     }

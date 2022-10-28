@@ -18,6 +18,7 @@ public class ChangeColor : MonoBehaviour
 
     public void SelectColor()
     {
+        //When the color is selected, looks for the result in the if and change the color   
         if( lista.value == 0)
         {
             colorCubo.material.SetColor("_Color", Color.red);
